@@ -1,0 +1,22 @@
+name = "ai-developer-home"
+account_id = "35b028e912c9dae6d36224443ca1d792"
+workers_dev = false
+compatibility_date = "2024-01-01"
+
+# D1 database binding (real)
+[[d1_databases]]
+binding = "ai_developer_db"
+database_name = "ai-developer-db"
+database_id = "3dfb6e62-d4fd-4e2c-ad17-275579a15109"
+
+# KV namespace binding (real)
+[[kv_namespaces]]
+binding = "AI_DEVELOPER_KV"
+id = "b3bf547d42724d15873bca783ad2831a"
+preview_id = "b3bf547d42724d15873bca783ad2831a"
+
+# Site configuration
+[site]
+pages_build_output_dir = "out"
+bucket = "./out"
+main = "workers-site/index.js"
